@@ -5,6 +5,10 @@ import AppKit
 import subprocess
 import sys
 
+"""
+This is a work in progress and an attempt to learn how to manage linx nodes remotely using python.
+Change the node names to match your environment.
+"""
 
 class App(tk.Frame):
     def __init__(self, master):
