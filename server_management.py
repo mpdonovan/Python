@@ -95,8 +95,8 @@ class App(tk.Frame):
         button2.configure(command=lambda btn=button2: self.run_Command(btn))
         button3.configure(command=lambda btn=button3: self.run_Command(btn))
         button4.configure(command=lambda btn=button4: self.run_Command(btn))
-        button5.configure(command=lambda btn=button5: self.click_reset(btn))
-        button6.configure(command=lambda btn=button6: self.click_cancel(btn))
+        button5.configure(command=lambda btn=button5: self.click_reset())
+        button6.configure(command=lambda btn=button6: self.click_cancel())
 
 
     def click_reset(self, event=None):
@@ -193,6 +193,13 @@ class App(tk.Frame):
         #self.clicked.append(text)
         #print "clicked:", self.clicked
 
+        self.status_msg = ""
+
+        message_frame = tk.Frame(self)
+        message_frame.pack()
+
+        stat_mg = tk.Label(message_frame, text=self.status_msg, justify='left').pack(pady=(1, 1))
+
         if text == "Status":
             COMMAND="systemctl status jamf.tomcat8 --no-pager | grep Active: | awk '{print $3}' | tr -d '()' | tr -d '\n'"
         elif text == "Restart":
@@ -202,7 +209,7 @@ class App(tk.Frame):
         if len(self.svr_list) != 0:
             self.svr_list.sort()
             for HOST in self.svr_list:
-                ssh = subprocess.Popen(["ssh", "-t", "%s" % HOST, COMMAND],
+                ssh = subprocess.Popen(["ssh", "%s" % HOST, COMMAND],
                                        shell=False,
                                        stdout=subprocess.PIPE,
                                        stderr=subprocess.PIPE)
@@ -214,12 +221,18 @@ class App(tk.Frame):
                     #print HOST, " is ", result
                     self.status_msg = str(HOST) + " - " + str(result).strip('[]').strip("''")
 
-                    message_frame = tk.Frame(self)
-                    message_frame.pack()
-
                     stat_mg = tk.Label(message_frame, text=self.status_msg, justify='left').pack(pady=(1, 1))
 
-            #self.click_reset(event)
+            self.var1.set(0)
+            self.var2.set(0)
+            self.var3.set(0)
+            self.var4.set(0)
+            self.var5.set(0)
+            self.var6.set(0)
+            self.var7.set(0)
+            self.var8.set(0)
+
+            self.svr_list = []
 
 
 
