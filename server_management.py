@@ -53,21 +53,21 @@ class App(tk.Frame):
 
         tk.Label(dialog_frame, text="Select the servers to manage.").pack()
 
-        tk.Checkbutton(dialog_frame, text='JSS110', variable=self.var1, command=self.sel_110).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE0', variable=self.var1, command=self.sel_110).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS111', variable=self.var2, command=self.sel_111).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE1', variable=self.var2, command=self.sel_111).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS112', variable=self.var3, command=self.sel_112).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE2', variable=self.var3, command=self.sel_112).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS113', variable=self.var4, command=self.sel_113).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE3', variable=self.var4, command=self.sel_113).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS114', variable=self.var5, command=self.sel_114).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE4', variable=self.var5, command=self.sel_114).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS115', variable=self.var6, command=self.sel_115).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE5', variable=self.var6, command=self.sel_115).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS116', variable=self.var7, command=self.sel_116).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE6', variable=self.var7, command=self.sel_116).pack(side='left')
 
-        tk.Checkbutton(dialog_frame, text='JSS117', variable=self.var8, command=self.sel_117).pack(side='left')
+        tk.Checkbutton(dialog_frame, text='MYNODE7', variable=self.var8, command=self.sel_117).pack(side='left')
 
         button_frame = tk.Frame(self)
         button_frame.pack(padx=5, pady=(0, 5), anchor='e')
@@ -115,72 +115,72 @@ class App(tk.Frame):
         #print("The user selected 110")
         sel_110_ck = self.var1.get()
         if sel_110_ck == 1:
-            self.svr_list.append('JSS110.killeenisd.org')
+            self.svr_list.append('MYNODE0.killeenisd.org')
         elif sel_110_ck == 0:
-            self.svr_list.remove('JSS110.killeenisd.org')
+            self.svr_list.remove('MYNODE0.killeenisd.org')
         #print(self.svr_list)
 
     def sel_111(self, event=None):
         #print("The user selected 111")
         sel_111_ck = self.var2.get()
         if sel_111_ck == 1:
-            self.svr_list.append('JSS111.killeenisd.org')
+            self.svr_list.append('MYNODE1.killeenisd.org')
         elif sel_111_ck == 0:
-            self.svr_list.remove('JSS111.killeenisd.org')
+            self.svr_list.remove('MYNODE1.killeenisd.org')
         #print(self.svr_list)
 
     def sel_112(self, event=None):
         #print("The user selected 112")
         sel_112_ck = self.var3.get()
         if sel_112_ck == 1:
-            self.svr_list.append('JSS112.killeenisd.org')
+            self.svr_list.append('MYNODE2.killeenisd.org')
         elif sel_112_ck == 0:
-            self.svr_list.remove('JSS112.killeenisd.org')
+            self.svr_list.remove('MYNODE2.killeenisd.org')
         #print(self.svr_list)
 
     def sel_113(self, event=None):
         #print("The user selected 113")
         sel_113_ck = self.var4.get()
         if sel_113_ck == 1:
-            self.svr_list.append('JSS113.killeenisd.org')
+            self.svr_list.append('MYNODE3.killeenisd.org')
         elif sel_113_ck == 0:
-            self.svr_list.remove('JSS113.killeenisd.org')
+            self.svr_list.remove('MYNODE3.killeenisd.org')
         #print(self.svr_list)
 
     def sel_114(self, event=None):
         #print("The user selected 114")
         sel_114_ck = self.var5.get()
         if sel_114_ck == 1:
-            self.svr_list.append('JSS114.killeenisd.org')
+            self.svr_list.append('MYNODE4.killeenisd.org')
         elif sel_114_ck == 0:
-            self.svr_list.remove('JSS114.killeenisd.org')
+            self.svr_list.remove('MYNODE4.killeenisd.org')
         #print(self.svr_list)
 
     def sel_115(self, event=None):
         #print("The user selected 115")
         sel_115_ck = self.var6.get()
         if sel_115_ck == 1:
-            self.svr_list.append('JSS115.killeenisd.org')
+            self.svr_list.append('MYNODE5.killeenisd.org')
         elif sel_115_ck == 0:
-            self.svr_list.remove('JSS115.killeenisd.org')
+            self.svr_list.remove('MYNODE5.killeenisd.org')
         #print(self.svr_list)
 
     def sel_116(self, event=None):
         #print("The user selected 116")
         sel_116_ck = self.var7.get()
         if sel_116_ck == 1:
-            self.svr_list.append('JSS116.killeenisd.org')
+            self.svr_list.append('MYNODE6.killeenisd.org')
         elif sel_116_ck == 0:
-            self.svr_list.remove('JSS116.killeenisd.org')
+            self.svr_list.remove('MYNODE6.killeenisd.org')
         #print(self.svr_list)
 
     def sel_117(self, event=None):
         #print("The user selected 117")
         sel_117_ck = self.var8.get()
         if sel_117_ck == 1:
-            self.svr_list.append('JSS117.killeenisd.org')
+            self.svr_list.append('MYNODE7.killeenisd.org')
         elif sel_117_ck == 0:
-            self.svr_list.remove('JSS117.killeenisd.org')
+            self.svr_list.remove('MYNODE7.killeenisd.org')
         #print(self.svr_list)
 
     def run_Command(self, btn):
