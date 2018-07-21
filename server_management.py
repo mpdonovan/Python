@@ -191,11 +191,13 @@ class App(tk.Frame):
 
         if text == "Status":
             COMMAND="systemctl status jamf.tomcat8 --no-pager | grep Active: | awk '{print $3}' | tr -d '()' | tr -d '\n'"
+        elif text == "Restart":
+            # Requires RSA key login and user sudo without password for service command
+            COMMAND="sudo service jamf.tomcat8 restart"
 
         if len(self.svr_list) != 0:
             self.svr_list.sort()
             for HOST in self.svr_list:
-
                 ssh = subprocess.Popen(["ssh", "-t", "%s" % HOST, COMMAND],
                                        shell=False,
                                        stdout=subprocess.PIPE,
@@ -206,7 +208,7 @@ class App(tk.Frame):
                     print >>sys.stderr, "ERROR: %s" % error
                 else:
                     #print HOST, " is ", result
-                    self.status_msg = str(HOST) + " is " + str(result).strip('[]').strip("''")
+                    self.status_msg = str(HOST) + " - " + str(result).strip('[]').strip("''")
 
                     message_frame = tk.Frame(self)
                     message_frame.pack()
