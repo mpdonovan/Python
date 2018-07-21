@@ -115,72 +115,72 @@ class App(tk.Frame):
         #print("The user selected 110")
         sel_110_ck = self.var1.get()
         if sel_110_ck == 1:
-            self.svr_list.append('MYNODE0.killeenisd.org')
+            self.svr_list.append('MYNODE0.myschool.net')
         elif sel_110_ck == 0:
-            self.svr_list.remove('MYNODE0.killeenisd.org')
+            self.svr_list.remove('MYNODE0.myschool.net')
         #print(self.svr_list)
 
     def sel_111(self, event=None):
         #print("The user selected 111")
         sel_111_ck = self.var2.get()
         if sel_111_ck == 1:
-            self.svr_list.append('MYNODE1.killeenisd.org')
+            self.svr_list.append('MYNODE1.myschool.net')
         elif sel_111_ck == 0:
-            self.svr_list.remove('MYNODE1.killeenisd.org')
+            self.svr_list.remove('MYNODE1.myschool.net')
         #print(self.svr_list)
 
     def sel_112(self, event=None):
         #print("The user selected 112")
         sel_112_ck = self.var3.get()
         if sel_112_ck == 1:
-            self.svr_list.append('MYNODE2.killeenisd.org')
+            self.svr_list.append('MYNODE2.myschool.net')
         elif sel_112_ck == 0:
-            self.svr_list.remove('MYNODE2.killeenisd.org')
+            self.svr_list.remove('MYNODE2.myschool.net')
         #print(self.svr_list)
 
     def sel_113(self, event=None):
         #print("The user selected 113")
         sel_113_ck = self.var4.get()
         if sel_113_ck == 1:
-            self.svr_list.append('MYNODE3.killeenisd.org')
+            self.svr_list.append('MYNODE3.myschool.net')
         elif sel_113_ck == 0:
-            self.svr_list.remove('MYNODE3.killeenisd.org')
+            self.svr_list.remove('MYNODE3.myschool.net')
         #print(self.svr_list)
 
     def sel_114(self, event=None):
         #print("The user selected 114")
         sel_114_ck = self.var5.get()
         if sel_114_ck == 1:
-            self.svr_list.append('MYNODE4.killeenisd.org')
+            self.svr_list.append('MYNODE4.myschool.net')
         elif sel_114_ck == 0:
-            self.svr_list.remove('MYNODE4.killeenisd.org')
+            self.svr_list.remove('MYNODE4.myschool.net')
         #print(self.svr_list)
 
     def sel_115(self, event=None):
         #print("The user selected 115")
         sel_115_ck = self.var6.get()
         if sel_115_ck == 1:
-            self.svr_list.append('MYNODE5.killeenisd.org')
+            self.svr_list.append('MYNODE5.myschool.net')
         elif sel_115_ck == 0:
-            self.svr_list.remove('MYNODE5.killeenisd.org')
+            self.svr_list.remove('MYNODE5.myschool.net')
         #print(self.svr_list)
 
     def sel_116(self, event=None):
         #print("The user selected 116")
         sel_116_ck = self.var7.get()
         if sel_116_ck == 1:
-            self.svr_list.append('MYNODE6.killeenisd.org')
+            self.svr_list.append('MYNODE6.myschool.net')
         elif sel_116_ck == 0:
-            self.svr_list.remove('MYNODE6.killeenisd.org')
+            self.svr_list.remove('MYNODE6.myschool.net')
         #print(self.svr_list)
 
     def sel_117(self, event=None):
         #print("The user selected 117")
         sel_117_ck = self.var8.get()
         if sel_117_ck == 1:
-            self.svr_list.append('MYNODE7.killeenisd.org')
+            self.svr_list.append('MYNODE7.myschool.net')
         elif sel_117_ck == 0:
-            self.svr_list.remove('MYNODE7.killeenisd.org')
+            self.svr_list.remove('MYNODE7.myschool.net')
         #print(self.svr_list)
 
     def run_Command(self, btn):
