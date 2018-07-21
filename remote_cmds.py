@@ -3,8 +3,8 @@
 import subprocess
 import sys
 
-servers=["jss110.killeenisd.org", "jss111.killeenisd.org", "jss112.killeenisd.org", "jss113.killeenisd.org", "jss114.killeenisd.org", "jss115.killeenisd.org", "jss116.killeenisd.org", "jss117.killeenisd.org"]
-#servers=["jss117.killeenisd.org"]
+servers=["node0.myschool.net", "node1.myschool.net", "node2.myschool.net", "node3.myschool.net", "node4.myschool.net", "node5.myschool.net", "node6.myschool.net", "node7.myschool.net"]
+#servers=["node7.myschool.net"]
 
 for HOST in servers:
     # Ports are handled in ~/.ssh/config since we use OpenSSH
