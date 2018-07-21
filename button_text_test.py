@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+#This allows the text of the button to be used in a function
 from Tkinter import *
 class GraphicsInterface:
 
